@@ -7,34 +7,41 @@ public class AVLTree {
             root = new Node(valor, null);
         } else {
 
-            //Começa em um nó
-
-            //ve se é maior ou menor
-
-            //Vai para uma direção de acordo com isso
-
-            //faz isso até chegar onde:
-                //Não tem nó a esrda e nem a direita
-
             Node i = root;
             while(true){
                 if (valor == i.getValor()){
                     //Esse numero já esta na lista
-                    
+                    break;
                 } else if(valor > i.getValor()){
-                    //vai para a direita
+                    //verifica se existe um nó
+                    if (i.getDireito() != null){
+                        //vai para a direita
+                        i = i.getDireito();
+                    }else{
+                        //insere aqui
+                        i.setDireito(new Node(valor, i));
+                    }
 
                 } else if (valor < i.getValor()){
-                    //vai para esquerda
-
+                    //verifica se existe um nó
+                    if (i.getEsquerdo() != null){
+                        //vai para esquerda
+                        i = i.getEsquerdo();
+                    }else{
+                        i.setEsquerdo(new Node(valor, i));
+                    }
                 }
-
-
+                balanceia(root);
             }
+
+            //balanceia
 
 
 
         }
+    }
+
+    private void balanceia(Node root) {
     }
 
 

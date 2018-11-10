@@ -78,7 +78,7 @@ public class Main {
         //Terceira linha
         noAInserir = Integer.valueOf(entrada.get(2));
 
-        System.out.println("teste");
+
         construirArvore(nosDaArvore);
     }
 
@@ -89,7 +89,10 @@ public class Main {
      */
     private static void construirArvore(ArrayList<Integer> nosDaArvore) {
 
-
-
+        AVLTree tree = new AVLTree();
+        for (int i:nosDaArvore) {
+            tree.inserir(i);
+        }
+        System.out.println("Teste");
     }
 }
