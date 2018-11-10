@@ -44,11 +44,11 @@ public class Main {
      * @param entrada Lista contendo as linahs de entrada
      */
     private static void processaEntrada(ArrayList<String> entrada) {
-        //int quantNosExist = 0;
+        int quantNosExist = 0;
         int noAInserir = 0;
 
         //Primeira linha
-        int quantNosExist = Integer.valueOf(entrada.get(0));
+        quantNosExist = Integer.valueOf(entrada.get(0));
 
 
         //Segunda linha
@@ -79,5 +79,17 @@ public class Main {
         noAInserir = Integer.valueOf(entrada.get(2));
 
         System.out.println("teste");
+        construirArvore(nosDaArvore);
+    }
+
+    /**
+     * Metodo que recebe uma lista de valores e constroi uma arvore
+     * Essa arvore é da clase AVLTree e é preenchida com a classe AVLTree.Node
+     * @param nosDaArvore lista contendo os valores da arvore
+     */
+    private static void construirArvore(ArrayList<Integer> nosDaArvore) {
+
+
+
     }
 }
