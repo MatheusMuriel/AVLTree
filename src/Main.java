@@ -30,6 +30,15 @@ public class Main {
         }
     }
 
+    /**
+     * Após ler o arquivo de entrada, deve-se inserir cada um dos nós na árvore balanceada.
+        No final deve ser salvo a saída do resultado da árvore em um arquivo,
+        onde a primeira linha deve conter o valor dos nós em percurso em-ordem
+        e a segunda em pré-ordem. Existem três tipos de percursos/caminhamentos
+        em árvores binárias (pré-ordem, em-ordem, pós-ordem).
+     * @param st
+     * @param i
+     */
     private static void processaEntrada(String st, int i) {
 
         System.out.println(st);
