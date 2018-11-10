@@ -1,7 +1,13 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        File arquivoDeEntrada = new File("input.txt");
+        ReadFile(arquivoDeEntrada);
     }
 
     /**
@@ -22,5 +28,11 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static void processaEntrada(String st, int i) {
+
+        System.out.println(st);
+
     }
 }
